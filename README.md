@@ -7,4 +7,6 @@ docker run -it --rm -v $(pwd):/app --name "php-symfony-console" php-symfony-cons
 ```
 
 # Usage
-```docker run -it --rm -v $(pwd):/app --name "php-symfony-console" php-symfony-console bin/console command:default```
+```
+docker run -it --rm -v $(pwd):/app --name "php-symfony-console" php-symfony-console bin/console command:default
+```

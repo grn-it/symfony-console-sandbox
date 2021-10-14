@@ -10,5 +10,4 @@ run:
 
 uninstall:
 	docker image rm php-symfony-console
-	cd ../
-	rm -rf symfony-console
+	rm -rf ${run}

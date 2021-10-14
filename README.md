@@ -1,9 +1,6 @@
 # Installation
 ```
-git clone https://github.com/grn-it/symfony-console.git
-cd symfony-console
-docker build -t php-symfony-console .docker
-docker run -it --rm -v $(pwd):/app --name "php-symfony-console" php-symfony-console composer install
+git clone https://github.com/grn-it/symfony-console.git && cd symfony-console && make install
 ```
 
 # Usage

@@ -5,5 +5,5 @@ git clone https://github.com/grn-it/symfony-console.git && cd symfony-console &&
 
 # Usage
 ```
-docker run -it --rm -v $(pwd):/app --name "php-symfony-console" php-symfony-console bin/console command:default
+make run command="bin/console command:default"
 ```

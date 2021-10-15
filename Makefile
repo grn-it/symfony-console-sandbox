@@ -1,13 +1,14 @@
 pwd = $(shell pwd)
-run = docker run -it --rm -v ${pwd}:/app --name "php-symfony-console" php-symfony-console
+repository_name = symfony-console-sandbox
+run = docker run -it --rm -v ${pwd}:/app --name "${repository_name}" ${repository_name}
 
 install:
-	docker build -t php-symfony-console .docker
+	docker build -t ${repository_name} .docker
 	${run} composer install
 
 run:
 	${run} $(command)
 
 uninstall:
-	docker image rm php-symfony-console
+	docker image rm ${repository_name}
 	rm -rf ${pwd}

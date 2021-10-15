@@ -1,6 +1,6 @@
 # Installation
 ```
-git clone https://github.com/grn-it/symfony-console-sandbox.git && cd symfony-console && make install
+git clone https://github.com/grn-it/symfony-console-sandbox.git && cd symfony-console-sandbox && make install
 ```
 
 # Usage

@@ -4,7 +4,7 @@ run = docker run -it --rm -v ${pwd}:/app --name "${repository_name}" ${repositor
 
 install:
 	docker build -t ${repository_name} .docker
-	${run} composer install
+	${run} composer update
 
 run:
 	${run} $(command)

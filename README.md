@@ -7,6 +7,9 @@ git clone https://github.com/grn-it/symfony-console-sandbox.git && cd symfony-co
 ```
 make run command="bin/console command:default"
 ```
+```
+make run command=bash
+```
 
 # Uninstall
 Careful, deletes the docker image and all project files
